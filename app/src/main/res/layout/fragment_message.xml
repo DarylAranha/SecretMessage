@@ -17,6 +17,14 @@
         android:hint="@string/message_hint"
         android:inputType="textMultiLine"/>
 
+    <EditText
+        android:id="@+id/secondMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/message_hint"
+        android:inputType="textMultiLine"/>
+
     <Button
         android:id="@+id/next"
         android:layout_width="wrap_content"
@@ -24,11 +32,11 @@
         android:layout_marginTop="20dp"
         android:text="@string/next"/>
 
-    <Button
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/back"/>
+<!--    <Button-->
+<!--        android:id="@+id/back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="@string/back"/>-->
 
 </LinearLayout>
