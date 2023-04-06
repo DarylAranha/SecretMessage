@@ -38,6 +38,9 @@
         <argument
             android:name="secondMessage"
             app:argType="string" />
+        <argument
+            android:name="encrypt"
+            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/secondEncryptFragmen"

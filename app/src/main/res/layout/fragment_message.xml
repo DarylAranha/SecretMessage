@@ -25,6 +25,12 @@
         android:hint="@string/message_hint"
         android:inputType="textMultiLine"/>
 
+    <CheckBox
+        android:id="@+id/shouldEncrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypt Text" />
+
     <Button
         android:id="@+id/next"
         android:layout_width="wrap_content"
@@ -32,7 +38,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/next"/>
 
-<!--    <Button-->
+
+    <!--    <Button-->
 <!--        android:id="@+id/back"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->

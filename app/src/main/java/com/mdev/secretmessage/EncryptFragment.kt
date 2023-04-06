@@ -17,6 +17,7 @@ class EncryptFragment : Fragment() {
         val args = EncryptFragmentArgs.fromBundle(requireArguments())
         val message = args.message
         val secondMessage = args.secondMessage
+        val encrypt = args.encrypt
 
         val nextEncryptButton = view.findViewById<Button>(R.id.nextEncrypt)
         nextEncryptButton.setOnClickListener {
@@ -25,7 +26,13 @@ class EncryptFragment : Fragment() {
         }
 
         val encryptedView = view.findViewById<TextView>(R.id.encrypted_message)
-        encryptedView.text = message.reversed()
+
+        if (encrypt) {
+            encryptedView.text = message.reversed()
+        } else {
+            encryptedView.text = message
+        }
+
 
         return view
     }
